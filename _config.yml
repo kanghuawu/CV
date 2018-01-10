@@ -1,16 +1,16 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Jalpc
-description: My CV at http://cv.jarrekk.com
-keywords: Jack,jiakun,jia,kun,cv,resume
+title: Kang-Hua
+description: My CV at https://kanghuawu.github.io/
+keywords: kang-hua,wu,cv,resume
 baseurl:
-url: http://cv.jarrekk.com
+url: https://kanghuawu.github.io/
 # url: http://127.0.0.1:4000
 
 # baidu analytics
-ba:
-  uuid: 317acca9ef9255b934e46371e471431d
+# ba:
+#   uuid: 317acca9ef9255b934e46371e471431d
 
 # Build settings
 encoding: utf-8
