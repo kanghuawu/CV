@@ -32,7 +32,7 @@ div.social_information ul li {
 }
 
 #summary, #education, #work-experience, #skills, #language, #project, #certificate, #research {
-	margin-top: 3mm;
+	margin-top: 2mm;
 }
 
 .information {
@@ -46,6 +46,7 @@ div.social_information ul li {
 	font-size: 12mm;
 	margin-top: 0;
 	line-height: 12mm;
+	text-align: center;
 }
 
 .cv_title {
@@ -95,7 +96,7 @@ span {
 .edu-fromto {
 	font-family: Trebuchet MS;
 	float: right;
-	line-height: 21mm;
+	line-height: 13mm;
 	margin: 0 auto;
 	padding: 0 auto;
 	width: 20%;
@@ -104,7 +105,7 @@ span {
 .work-fromto {
 	font-family: Trebuchet MS;
 	float: right;
-	line-height: 35mm;
+	line-height: 21mm;
 	margin: 0 auto;
 	padding: 0 auto;
 	width: 20%;

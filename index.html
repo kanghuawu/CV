@@ -35,7 +35,7 @@ permalink: /
 
   <!-- Each sheet element should have the class "sheet" -->
   <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
-  <section class="sheet padding-20mm">
+  <section class="sheet padding-15mm">
 
     <!-- Write HTML just like a web page -->
     <article>
@@ -52,34 +52,66 @@ permalink: /
         </div>
         <div class="social_information">
           <ul style="list-style: none;float: left;">
-            <li><i class="fa fa-github"></i></li>
             <li><i class="fa fa-map-marker"></i></li>
             <li><i class="fa fa-envelope"></i></li>
-            <li><i class="fa fa-phone"></i></li>
-            <li><i class="fa fa-globe"></i></li>
+            <li><i class="fa fa-github"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
           </ul>
           <ul style="list-style: none;float: right;">
-            <li>{{ site.data.my_information.github_username }}</li>
             <li>{{ site.data.my_information.address }}</li>
             <li>{{ site.data.my_information.email }}</li>
-            <li>{{ site.data.my_information.phone }}</li>
-            <li>{{ site.data.my_information.website }}</li>
+            <li>{{ site.data.my_information.github_username }}</li>
+            <li>{{ site.data.my_information.linkedin }}</li>
           </ul>
         </div>
       </div>
 
-      <div id="summary">
+      <!-- <div id="summary">
         <i class="fa fa-info-circle fa-lg"></i> <p class="item">Summary</p>
         <hr>
         <span style="line-height: 7mm;">{{ site.data.my_summary.summary }}</span>
+      </div> -->
+      <div id="education">
+        <i class="fa fa-mortar-board fa-lg"></i> <p class="item">Education</p>
+        <hr>
+        {% for edu in site.data.my_education %}
+        <div style="height: 13mm;">
+        <div style="float: left;height: 13mm;width: 78%;">
+          <span class="arial-black">{{ edu.school }}</span>
+          <span class="trebuchet">{{ edu.location }}</span>
+          <br>
+          <span class="degree">{{ edu.degree }}</span>
+          <span class="arial">{{ edu.curriculum }}</span>
+        </div>
+        <p class="edu-fromto">{{ edu.fromto }}</p>
+        </div>
+        {% endfor %}
       </div>
-
+      <div id="skills">
+        <i class="fa fa-cogs fa-lg"></i> <p class="item">Skills</p>
+        <hr>
+        <span class="arial-rounded">Program Language:</span><span class="trebuchet">{{ site.data.my_skills.program_language }}</span><br>
+        <span class="arial-rounded">Platform:</span><span class="trebuchet">{{ site.data.my_skills.technologies }}</span><br>
+        <span class="arial-rounded">Development:</span><span class="trebuchet">{{ site.data.my_skills.cloud }}</span><br>
+        <span class="arial-rounded">Technology Stack:</span><span class="trebuchet">{{ site.data.my_skills.frameworks }}</span><br>
+      </div>
+      <div id="project">
+        <i class="fa fa-code fa-lg"></i> <p class="item">Projects</p>
+        <hr>
+        {% for project in site.data.my_project %}
+        <span class="arial-black">{{ project.name }}</span>
+        <span class="trebuchet">{{ project.language }}</span>
+        <br>
+        <span class="degree">{{ project.desc }}</span>
+        <br>
+        {% endfor %}
+      </div>
       <div id="work-experience">
         <i class="fa fa-users fa-lg"></i> <p class="item">Work Experience</p>
         <hr>
         {% for work in site.data.my_work %}
-        <div style="height: 35mm;">
-        <div style="float: left;height: 35mm;width: 78%;">
+        <div style="height: 21mm;">
+        <div style="float: left;height: 21mm;width: 78%;">
           <span class="arial-black">{{ work.company }}</span>
           <span class="trebuchet">({{ work.location }})</span>
           <span class="trebuchet">{{ work.title }}</span>
@@ -91,29 +123,12 @@ permalink: /
         {% endfor %}
       </div>
 
-      <div id="education">
-        <i class="fa fa-mortar-board fa-lg"></i> <p class="item">Education</p>
-        <hr>
-        {% for edu in site.data.my_education %}
-        <div style="height: 21mm;">
-        <div style="float: left;height: 21mm;width: 78%;">
-          <span class="arial-black">{{ edu.school }}</span>
-          <span class="trebuchet">{{ edu.location }}</span>
-          <br>
-          <span class="degree">{{ edu.degree }}</span>
-          <span class="arial">{{ edu.curriculum }}</span>
-        </div>
-        <p class="edu-fromto">{{ edu.fromto }}</p>
-        </div>
-        {% endfor %}
-      </div>
-
     </article>
 
   </section>
 
   <!-- second page -->
-  <section class="sheet padding-20mm">
+  <!-- <section class="sheet padding-20mm">
     <article>
 
       <div id="language" style="display: inline-block;width: 100%;">
@@ -184,7 +199,7 @@ permalink: /
       </div>
 
     </article>
-  </section>
+  </section> -->
 
   <!-- if two pages are not enough for you, please cut/paste some sections to this page
   <section class="sheet padding-20mm">
