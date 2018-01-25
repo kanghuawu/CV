@@ -32,20 +32,20 @@ div.social_information ul li {
 }
 
 #summary, #education, #work-experience, #skills, #language, #project, #certificate, #research {
-	margin-top: 2mm;
+	margin-top: 5mm;
 }
 
 .information {
 	margin: 0;
 	padding: 0;
-	height: 35mm;
+	height: 25mm;
 }
 
 .cv_name {
 	font-family: Monospace;
 	font-size: 12mm;
 	margin-top: 0;
-	line-height: 12mm;
+	line-height: 14mm;
 	text-align: center;
 }
 
